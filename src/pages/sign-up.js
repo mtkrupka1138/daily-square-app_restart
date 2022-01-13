@@ -14,62 +14,52 @@ export default function SignUp() {
 
 
     return (
-        <div className="container flex mx-auto max-w-screen-md items-center h-screen">
-            <div className="flex flex-col w-2/5">
-                <div className="flex flex-col items-center bg-white p-4 border border-gray-primary mb-4">
-                    {/* <h1 className="flex justify-center w-full">
-                        <img src="/images/logo.png" alt="Instagram" className="mt-2 w-6/12 mb-4" />
-                    </h1> */}
-                    {error && <p className="mb-4 text-xs text-red-primary">{error}</p>}
-                    <form method="POST">
-                        <input
-                            aria-label="Enter your username"
-                            type="text"
-                            placeholder="Username"
-                            className="text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 border border-gray-primary rounded mb-2"
-                            onChange={({ target }) => setUsername(target.value)}
-                            value={username}
-                        />
-                        <input
-                            aria-label="Enter your full name"
-                            type="text"
-                            placeholder="Full name"
-                            className="text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 border border-gray-primary rounded mb-2"
-                            onChange={({ target }) => setFullName(target.value)}
-                            value={fullName}
-                        />
-                        <input
-                            aria-label="Enter your email address"
-                            type="text"
-                            placeholder="Email address"
-                            className="text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 border border-gray-primary rounded mb-2"
-                            onChange={({ target }) => setEmailAddress(target.value)}
-                            value={emailAddress}
-                        />
-                        <input
-                            aria-label="Enter your password"
-                            type="password"
-                            placeholder="Password"
-                            className="text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 border border-gray-primary rounded mb-2"
-                            onChange={({ target }) => setPassword(target.value)}
-                            value={password}
-                        />
-                        <button 
-                            disabled={isInvalid} 
-                            type="submit" 
-                            className={`bg-blue-medium text-white w-full rounded h-8 font-bold
-                            ${isInvalid && 'opacity-50'}`}
-                        >
-                            Sign Up
-                        </button>
+        <div className="relative min-h-screen flex items-center justify-center bg-bluesgrays-50 py-12 px-4 sm:px-6 lg:px-8 relative items-center">
+            <div className="max-w-md w-full space-y-8 p-10 bg-bluesgrays-100 rounded-xl z-10">
+                <div className="text-center">
+                    <h2 className="mt-6 text-3xl font-bold text-gray-900">
+                    profile creation
+                    </h2>
+                    <form className="mt-8 space-y-6" action="#" method="POST">
+                        <div className="relative">
+                            <label className="text-sm font-bold text-gray-700 tracking-wide">email</label>
+                            <input 
+                                className=" w-full text-base py-2 rounded-xl focus:outline-none focus:border-indigo-500" 
+                                type="text" 
+                                placeholder="  Email address" 
+                                onChange={({ target }) => setEmailAddress(target.value)}
+                                value={emailAddress}
+                            />
+                        </div>
+                        <div className="mt-8 content-center">
+                            <label className="text-sm font-bold text-gray-700 tracking-wide">
+                                password
+                            </label>
+                            <input 
+                                className="w-full content-center text-base py-2 rounded-xl focus:outline-none focus:border-indigo-500" 
+                                type="password" 
+                                placeholder="  Password" 
+                                onChange={({ target }) => setPassword(target.value)}
+                                value={password} 
+                            />
+                        </div>
+                        <div className="flex items-center justify-between">
+                            <div className="text-sm">
+                                <a href="#" className="font-medium text-indigo-500 hover:text-indigo-500">
+                                    Forgot your password?
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" className="w-full flex justify-center bg-bluesgrays-400 text-gray-100 p-4  rounded-full tracking-wide font-semibold focus:outline-none focus:shadow-outline hover:bg-indigo-600 shadow-lg cursor-pointer transition ease-in duration-300">
+                                create profile
+                            </button>
+                        </div>
+                        <p className="flex flex-col items-center justify-center mt-10 text-center text-md text-gray-500">
+                            <span>already have a profile?</span>
+                            <Link to={ROUTES.LOGIN}className="text-indigo-500 hover:text-indigo-500no-underline hover:underline cursor-pointer transition ease-in duration-300">Sign up</Link>
+                        </p>
                     </form>
-                </div>
-                <div className="flex justify-center items-center flex-col w-full bg-white p-4 border border-gray-primary">
-                    <p className="text-sm">Have an account? {``} 
-                        <Link to={ROUTES.LOGIN} className="font-bold text-blue-medium">
-                            Log In
-                        </Link>
-                    </p>
                 </div>
             </div>
         </div>

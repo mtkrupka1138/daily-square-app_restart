@@ -11,6 +11,9 @@ module.exports = {
           400: '#27739D', //navy indigo
           500: '#032031', //dark indigo
         }
+      },
+      fontFamily: {
+        'sans':[],
       }
     }
   },

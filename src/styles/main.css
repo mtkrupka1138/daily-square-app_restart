@@ -17,3 +17,67 @@ header {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+/* Daily Square */
+
+.square-container {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 50px 80px auto 80px 50px;
+    grid-template-rows: 50px 80px auto 80px 50px;
+    background-color: #004A74;
+    margin: 0 auto;
+}
+
+.main-square {
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#main-square {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+.main-square input {
+    border: 0px;
+    padding: 100px 5px;
+    width: 100%;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.square-item {
+    margin: 5px;
+}
+
+#square14 input {
+    border: 0px;
+    background-color: #F2E6E6;
+    text-align: center;
+    width: 100%;
+}
+
+.inside-square-item {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: #F2E6E6;
+}
+
+.inner-square {
+    background-color: #F2E6E6;
+    margin: 10px;
+}

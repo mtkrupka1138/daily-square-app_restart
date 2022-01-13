@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import SquareEntryForm from './square-entry';
+import SquareSingle from './square-entry';
 
 function SquaresTimeline() {
     return (
-        <SquareEntryForm />
+        <SquareSingle />
     )
 } 
 

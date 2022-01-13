@@ -6,6 +6,7 @@ import * as ROUTES from './constants/routes';
 const Login = lazy(() => import ('./pages/login'));
 const SignUp = lazy(() => import ('./pages/sign-up'));
 const Dashboard = lazy(() => import ('./pages/dashboard'));
+const SingleSquare = lazy(() => import ('./components/square-entry'));
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path={ROUTES.LOGIN} component={Login} />
           <Route path={ROUTES.SIGN_UP} component={SignUp} />
           <Route path={ROUTES.DASHBOARD} component={Dashboard} />
+          <Route path={ROUTES.SQUARE_SINGLE} component={SingleSquare} />
         </Switch>
       </Suspense>
     </Router>

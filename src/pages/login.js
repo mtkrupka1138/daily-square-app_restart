@@ -20,7 +20,7 @@ function Login() {
                     </h2>
                     <form className="mt-8 space-y-6" action="#" method="POST">
                         <div className="relative">
-                            <label className="text-sm font-bold text-gray-700 tracking-wide">Email</label>
+                            <label className="text-sm font-bold text-gray-700 tracking-wide">email</label>
                             <input 
                                 className=" w-full text-base py-2 rounded-xl focus:outline-none focus:border-indigo-500" 
                                 type="text" 
@@ -31,7 +31,7 @@ function Login() {
                         </div>
                         <div className="mt-8 content-center">
                             <label className="text-sm font-bold text-gray-700 tracking-wide">
-                                Password
+                                password
                             </label>
                             <input 
                                 className="w-full content-center text-base py-2 rounded-xl focus:outline-none focus:border-indigo-500" 
@@ -44,17 +44,17 @@ function Login() {
                         <div className="flex items-center justify-between">
                             <div className="text-sm">
                                 <a href="#" className="font-medium text-indigo-500 hover:text-indigo-500">
-                                    Forgot your password?
+                                    forgot your password?
                                 </a>
                             </div>
                         </div>
                         <div>
                             <button type="submit" className="w-full flex justify-center bg-bluesgrays-400 text-gray-100 p-4  rounded-full tracking-wide font-semibold focus:outline-none focus:shadow-outline hover:bg-indigo-600 shadow-lg cursor-pointer transition ease-in duration-300">
-                                Sign in
+                                sign in
                             </button>
                         </div>
                         <p className="flex flex-col items-center justify-center mt-10 text-center text-md text-gray-500">
-                            <span>Don't have an account?</span>
+                            <span>don't have a profile?</span>
                             <Link to={ROUTES.SIGN_UP}className="text-indigo-500 hover:text-indigo-500no-underline hover:underline cursor-pointer transition ease-in duration-300">Sign up</Link>
                         </p>
                     </form>
