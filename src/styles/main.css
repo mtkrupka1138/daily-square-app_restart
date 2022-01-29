@@ -2,14 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
+body, h1, h2, h3, h4, h5 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
     letter-spacing: .3rem;
-    background-color: #004A74;
     color: white;
 }
+
+.text-base {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
 
 header {
     margin: 0 auto;
@@ -26,7 +28,6 @@ header {
     display: grid;
     grid-template-columns: 50px 80px auto 80px 50px;
     grid-template-rows: 50px 80px auto 80px 50px;
-    background-color: #004A74;
     margin: 0 auto;
 }
 
@@ -74,7 +75,7 @@ header {
     width: 80%;
     height: 80%;
     margin: 0 auto;
-    background-color: #F2E6E6;
+    background-color: #b9b5b5;
 }
 
 .inner-square {

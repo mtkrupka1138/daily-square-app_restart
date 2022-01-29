@@ -13,7 +13,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        'sans':[],
+        'sans':['Roboto', 'sans-serif'],
       }
     }
   },
