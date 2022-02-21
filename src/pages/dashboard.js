@@ -1,12 +1,20 @@
 import React from 'react';
-import SquaresTimeline from '../components/squares-timeline';
+import Square from '../components/square';
+import data from '../data';
 
 
-function Dashboard () {
+export default function Dashboard () {
+
+  const squares = data.map(item => {
+    return (
+      <Square
+      />
+    )
+  })
 
   return (
-    <SquaresTimeline />
+    <div>
+      {squares}
+    </div>
   )
 }
-
-export default Dashboard;
