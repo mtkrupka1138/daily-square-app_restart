@@ -1,21 +1,23 @@
 import React from 'react';
 import Square from '../components/square';
+import Form from '../components/form';
 import data from '../data';
 
 
 export default function Dashboard () {
 
-  const squares = data.map(item => {
+  // const squares = data.map(item => {
     return (
-      <Square
-      />
-    )
-  })
 
-  return (
-    <div>
-      {squares}
-    </div>
-  )
+      <div>
+        <Form />
+        <Square
+        />
+      </div>
+      
+    )
+  
+
+
   
 }
