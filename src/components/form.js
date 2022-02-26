@@ -7,23 +7,44 @@ class Form extends Component {
         return (
 
             <form>
-                <label for="toggle-example" class="flex relative items-center mb-4 cursor-pointer">
-                    <input type="checkbox" id="toggle-example" class="sr-only" />
-                    <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
-                    <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me</span>
-                </label>
+                <div class="flex items-center justify-center w-full mb-12">
+                    <label for="toggleB" class="flex items-center cursor-pointer">
+                        <div class="relative">
+                            <input type="checkbox" id="toggleB" class="sr-only" />
+                            <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
+                            <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                        </div>
+                        <div class="ml-3 text-gray-700 font-medium">
+                            Toggle Me!
+                        </div>
+                    </label>
+                </div>
 
-                <label for="toggle-example-checked" class="flex relative items-center mb-4 cursor-pointer">
-                    <input type="checkbox" id="toggle-example-checked" class="sr-only" checked />
-                    <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
-                    <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me (checked)</span>
-                </label>
+                <div class="flex items-center justify-center w-full mb-12">
+                    <label for="toggleB" class="flex items-center cursor-pointer">
+                        <div class="relative">
+                            <input type="checkbox" id="toggleB" class="sr-only" />
+                            <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
+                            <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                        </div>
+                        <div class="ml-3 text-gray-700 font-medium">
+                            Toggle Me!
+                        </div>
+                    </label>
+                </div>
 
-                <label for="toggle-example-disabled" class="flex relative items-center mb-4 cursor-not-allowed">
-                    <input type="checkbox" id="toggle-example-disabled" class="sr-only" disabled />
-                    <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
-                    <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-600">Toggle me (disabled)</span>
-                </label>
+                <div class="flex items-center justify-center w-full mb-12">
+                    <label for="toggleB" class="flex items-center cursor-pointer">
+                        <div class="relative">
+                            <input type="checkbox" id="toggleB" class="sr-only" />
+                            <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
+                            <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                        </div>
+                        <div class="ml-3 text-gray-700 font-medium">
+                            Toggle Me!
+                        </div>
+                    </label>
+                </div>
             </form>
     
         )
